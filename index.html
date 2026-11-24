@@ -34,13 +34,65 @@
       text-decoration: none;
       font-weight: bold;
     }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    h2 {
+      color: #d4a64a;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: #1c1c1c;
+      padding: 30px;
+      border-radius: 10px;
+      width: 220px;
+    }
+    .card h3 {
+      margin: 0 0 15px;
+    }
+    .price {
+      color: #d4a64a;
+      font-size: 22px;
+      font-weight: bold;
+      margin: 0;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Lucky LLama</h1>
     <p>Мужские стрижки в Киеве</p>
-    <a href="#contacts">Записаться</a>
+    <a href="#services">Записаться</a>
   </header>
+
+  <section id="services">
+    <h2>Услуги и цены</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Мужская стрижка</h3>
+        <p class="price">400 грн</p>
+      </div>
+      <div class="card">
+        <h3>Борода</h3>
+        <p class="price">250 грн</p>
+      </div>
+      <div class="card">
+        <h3>Стрижка + борода</h3>
+        <p class="price">600 грн</p>
+      </div>
+      <div class="card">
+        <h3>Детская стрижка</h3>
+        <p class="price">500 грн</p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
